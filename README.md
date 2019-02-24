@@ -1,9 +1,9 @@
-### puzzle
+# puzzle
 Android拼图游戏，使用Android studio运行源代码
 
 ![界面](./picture/jiemian1.png)
 
-# version
+### version
 
 ```
 android {
