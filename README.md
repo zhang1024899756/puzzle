@@ -1,5 +1,6 @@
 # puzzle
-Android拼图游戏，使用Android studio运行源代码
+Android拼图游戏，使用Android studio运行源代码，附上开发报告，玩家排行榜功能现在不能用了，因为服务器干别的去了，可以自己在本地创建一个后台服务，我也在note里留了个[server](https://github.com/zhang1024899756/notes/tree/master/puzzle_server)模板
+
 
 ![界面](./picture/jiemian1.png)
 
