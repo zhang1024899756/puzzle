@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/game_background"
+    tools:context="com.game.index.IndexActivity">
+
+    <LinearLayout
+        android:id="@+id/wrap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/button06"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/user"
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_view"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:src="@android:drawable/ic_menu_myplaces" />
+
+                <ImageButton
+                    android:id="@+id/reStartButton"
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_view"
+                    android:cacheColorHint="@android:color/transparent"
+                    app:srcCompat="@android:drawable/ic_menu_revert" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/timeView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:background="@color/button06"
+                    android:text="120"
+                    android:textAlignment="center"
+                    android:textColorLink="@color/colorPrimaryDark"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/levelView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="第 1 关"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/world"
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_view"
+                    android:cacheColorHint="@android:color/transparent"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                <ImageButton
+                    android:id="@+id/stateBotton"
+                    android:layout_width="100dp"
+                    android:layout_height="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_view"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:src="@android:drawable/ic_media_pause" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <com.game.view.PuzzleLayout
+            android:id="@+id/id_PuzzleLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </com.game.view.PuzzleLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
